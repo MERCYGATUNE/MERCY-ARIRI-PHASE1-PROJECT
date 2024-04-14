@@ -56,7 +56,7 @@ header img{
     width: 60%;
 
 }
-.search inpu[type="text"]:focus {
+.search input[type="text"]:focus {
   border-left-color:transparent ;
   border-bottom-color: var(--border-color);
 width: 61%;
@@ -70,6 +70,16 @@ width: 61%;
     font-size:1rem ;
     border: 1px  solid blue;
     cursor: pointer;
+}
+#search-result-container{
+    margin-top:20px;
+}
+.search-result{
+    margin-bottom: 10px;
+    padding:10px;
+    border:1px solid white;
+    border-radius:5px;
+    background-color:#f9f9f9;
 }
 .btn:hover{
     background: blue;
