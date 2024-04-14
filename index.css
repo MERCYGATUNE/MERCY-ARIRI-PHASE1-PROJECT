@@ -1,163 +1,126 @@
-
 :root{
-    --light-color:#fff;
+    --light-color:white;
     --dark-color:#282828;
     --header-height:70px;
     --search-height:50px;
     --border-color:#ccc;
 }
 *{
- margin:0;
- padding:0;
- box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 body{
-    height:100vh;
+    height: 100vh;
     width:100vw;
-    background:var(--light-color);
-    overflow: hidden;
+   background:var(--light-color);
 }
+
 .container{
-    text-align:center ;
-     height: calc(100vh-var(--header-height)); 
+    text-align: center;
+    height: calc(100vh-var(--header-height));
 }
-
-
-
 
 
 header{
     height:var(--header-height);
     background: chocolate;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content:flex-end ;
-    color: var(--light-color);
+    color:var(--light-color);
     gap: 10px;
-    padding-right: 35px;
-
+    padding-right: 30px;
 }
-header img{
-   filter: invert(1);
 
+header img{
+    filter:invert(1);
 }
 .search{
-display: flex;
-justify-content: center;
-align-items: center;
-height: var(--search-height);
-gap: 10px;
-box-shadow: 0px 2px 8px 0px var(--border-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--search-height);
+    gap :10px;
+    box-shadow: 0px 2px 8px 0px #282828 ;
 }
 .search input[type="text"]{
-padding: 8px 10px;
-line-height: 1.5;
-font-size: 1rem;
-border: none;
-border: 1px solid var(--border-color);
-border-bottom:1 px solid transparent ;
-outline:none;
-transition: all 200ms ease-in-out;
-width:60%;
+    padding: 8px 10px;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: none;
+    border-left: 1px solid #282828;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    transition:all 200ms ease-in-out ;
+    width: 60%;
+
 }
- .search input[type="text"]:focus { 
- border-left-color: transparent; 
-border-bottom-color:var(--border-color);
-width:61%;
-} 
+.search inpu[type="text"]:focus {
+  border-left-color:transparent ;
+  border-bottom-color: var(--border-color);
+width: 61%;
+}
+
 .btn{
     padding: 8px 10px;
     background: transparent;
     border-radius: 2px;
-    font-size: 1rem;
     user-select: none;
-    border: 1px solid #007bff;
-    cursor:pointer;
+    font-size:1rem ;
+    border: 1px  solid blue;
+    cursor: pointer;
 }
 .btn:hover{
-    background: #007bff;
-    border-color: var(--dark-color);
-    color: var(--light-color);
+    background: blue;
+    border-color: #282828;
+    color: white;
 }
 #cuisine-container{
-  display:flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: calc(100vh-var(--header-height) + var(--search-height) +20px);
- overflow: hidden;
- overflow-y: auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
 }
 .cuisine{
-    height:300px;
+    height: 300px;
     width: 300px;
-    box-shadow: 0px 0px 8px 2px var(--border-color) ;
+    padding: 4px;
+    box-shadow: 0px 0px 8px 2px #282828 ;
     margin: 20px;
-    transition:all 200ms ease-in-out;
 
 }
 .cuisine-Title{
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1rem;
 }
 .cuisine-image{
-    height: 210px;
+    height:210px ;
+    
 }
+
 .cuisine-image img{
     height: 100%;
-    width: 100%;
+    width: 100%
 }
 .cuisine-text{
-    height:0px ;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 200ms ease-in-out;
-    background:#ccc;
-    margin-top:20px;
-    overflow:hidden;
-    overflow-y:auto;
-    transform:scale(.8);
-    transform-origin:top left;
+    height:120px;
+    visibility:visible;
+    opacity: 1;
+    transition:all 200ms ease-in-out;
 
 }
 .cuisine-text ul{
-    list-style-type:circle;
-    list-style-position:inside;
-    text-align:left;
-    padding:5px;
-
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align:left ;
+    padding: 5px;
 }
-.cuisine-text ul > li{
- padding:5px;
+.cuisine-text ul> li {
+    padding: 5px;
 }
-.cuisine:hover .cuisine-text{
-    height:120px;
-    visibility:visible;
-    opacity:1;
-    transform:scale(1);
-}
-.cuisine:hover{
-    height:420px;
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
