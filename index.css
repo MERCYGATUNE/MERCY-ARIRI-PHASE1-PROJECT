@@ -117,8 +117,8 @@ width: 61%;
 }
 
 .cuisine-image img{
-    height: 200%;
-    width: 200%
+    height: 150%;
+    width: 150%;
     object-fit: cover;
 }
 .cuisine-text{
