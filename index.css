@@ -79,7 +79,7 @@ width: 61%;
     padding:10px;
     border:1px solid white;
     border-radius:5px;
-    background-color:#f9f9f9;
+    background-color:white;
 }
 .btn:hover{
     background: blue;
@@ -117,8 +117,8 @@ width: 61%;
 }
 .cuisine-text{
     height:120px;
-    visibility:visible;
-    opacity: 1;
+    visibility:hidden;
+    opacity: 0;
     transition:all 200ms ease-in-out;
 
 }
