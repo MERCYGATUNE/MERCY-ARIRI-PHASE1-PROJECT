@@ -442,3 +442,47 @@ fetch(apiUrl)
     const locationToSearch2= "Central America";
     searchAndDisplayCuisine(cuisines, titleToSearch, locationToSearch);
     
+    function searchAndDisplayCuisine() {
+        let searchTitle = document.getElementById("searchTitle").value.toLowerCase();
+        let searchLocation = document.getElementById("searchLocation").value.toLowerCase();
+        
+        const results = [];
+        for (const cuisine of cuisines) {
+            if ((!searchTitle || cuisine.Title.toLowerCase().includes(searchTitle)) &&
+                (!searchLocation || cuisine.location.toLowerCase().includes(searchLocation))) {
+                results.push(cuisine);
+            }
+        }
+    
+        const resultsContainer = document.getElementById("results");
+        resultsContainer.innerHTML = ""; // Clear previous results
+        
+        if (results.length > 0) {
+            for (const result of results) {
+                const resultElement = document.createElement("div");
+                resultElement.innerHTML = `
+                    <p><strong>Title:</strong> ${result.Title}</p>
+                    <p><strong>Location:</strong> ${result.location}</p>
+                    <p><strong>Description:</strong> ${result.Description}</p>
+                    <!-- Add display of other properties as needed -->
+                    <hr>
+                `;
+                resultsContainer.appendChild(resultElement);
+            }
+        } else {
+            resultsContainer.innerHTML = "<p>No cuisine found matching the search criteria.</p>";
+        }
+    }
+    
+    // Example usage:
+    const cuisines3 = [
+        {
+            "id": "1",
+            "location": "Central America",
+            "Title": "Hearts of Palm Salsa",
+            "Description": "This fresh and tangy salsa...",
+            // Add other properties as needed
+        },
+        // Add more cuisine objects as needed
+    ];
+    

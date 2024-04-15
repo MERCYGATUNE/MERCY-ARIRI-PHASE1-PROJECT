@@ -1,7 +1,7 @@
 # FOOD AND THE WORLD API
 
 ## AUTHOR
-By Mercy Ariri Gatune
+# By Mercy Ariri Gatune
 
 ## Description
 A program that provides users with  information on different recipes for different cuisines based on culture and provides information on where to easily access the ingredients.
