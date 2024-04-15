@@ -473,7 +473,20 @@ fetch(apiUrl)
             resultsContainer.innerHTML = "<p>No cuisine found matching the search criteria.</p>";
         }
     }
+    // EVENT LISTENER FOR ;search button
+    document.getElementById("searchButton").addEventListener("click", searchAndDisplayCuisine);
     
+// Event listener for the "Enter" key in the input fields
+document.getElementById("searchTitle").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        searchAndDisplayCuisine();
+    }
+});
 
+document.getElementById("searchLocation").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        searchAndDisplayCuisine();
+    }
+});
 
     

@@ -87,9 +87,12 @@ width: 61%;
     color: white;
 }
 #cuisine-container{
-      display: ;
-      justify-content: ;
-      align-items:normal ;
+    margin:800px;
+    width:400px
+    padding :2100x
+     display: initial;
+    justify-content: start;
+     align-items: justify;
 }
 .cuisine{
     height: 300px;
@@ -101,14 +104,14 @@ width: 61%;
 }
 .cuisine-Title{
     height: 50px;
-   display: flex;
+   display: initial;
    align-items: center;
    justify-content: center;
    font-size: 1rem;
 }
 .cuisine-image{
-    height:210px ;
-    
+    height:210%;
+    display:fixed;
 }
 
 .cuisine-image img{
@@ -116,22 +119,22 @@ width: 61%;
     width: 100%
 }
 .cuisine-text{
-    height:290px;
+    
     visibility:visible;
     opacity: 1;
     transition:all 200ms ease-in-out;
-    font-size: 8px;
+    font-size: 14px;
 
 }
 .cuisine-text ul{
-    list-style-type: ;
+    list-style-type: circle ;
     list-style-position:inside ;
     text-align: justify;
     padding: 5px;
 }
 .cuisine-text ul> li {
     padding: 1px;
-    font-size: 8px;
+    font-size: 14px;
 }
 
 
