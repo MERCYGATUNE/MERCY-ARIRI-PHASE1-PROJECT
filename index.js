@@ -435,9 +435,9 @@ fetch(apiUrl)
             "location": "Central America",
             "Title": "Hearts of Palm Salsa",
             "Description": "This fresh and tangy salsa...",
-            // Add other properties as needed
+            // Add other properties 
         },
-        // Add more cuisine objects as needed
+        // Add more cuisine objects 
     ];
     
     const titleToSearch2= "Hearts of Palm Salsa";
@@ -476,6 +476,6 @@ fetch(apiUrl)
         }
     }
     
-    // Example usage:
+
 
     
