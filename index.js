@@ -404,7 +404,7 @@ fetch(apiUrl)
     } else {
         console.log("No cuisine found matching the search criteria.");
     }
-    
+    //  TO SEARCH AND DISPLAY CUISINE
     function searchAndDisplayCuisine(cuisines, title, location) {
         const results = [];
         for (const cuisine of cuisines) {
@@ -420,7 +420,7 @@ fetch(apiUrl)
                 console.log("Title:", result.Title);
                 console.log("Location:", result.location);
                 console.log("Description:", result.Description);
-                // Add display of other properties as needed
+                // Add OTHER PROPERTIES
                 console.log("---------------------------------------");
             }
         } else {
@@ -445,9 +445,7 @@ fetch(apiUrl)
     searchAndDisplayCuisine(cuisines, titleToSearch, locationToSearch);
     
     function searchAndDisplayCuisine(cuisines,searchTitle,searchLocation) {
-        let searchTitle = document.getElementById("searchTitle").value.toLowerCase();
-        let searchLocation = document.getElementById("searchLocation").value.toLowerCase();
-        
+       
         const results = [];
         for (const cuisine of cuisines) {
             if ((!searchTitle || cuisine.Title.toLowerCase().includes(searchTitle)) &&
@@ -456,7 +454,7 @@ fetch(apiUrl)
             }
         }
     
-        const resultsContainer = document.getElementById("results");
+        let resultsContainer = document.getElementById("results");
         resultsContainer.innerHTML = ""; // Clear previous results
         
         if (results.length > 0) {
