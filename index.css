@@ -87,12 +87,13 @@ width: 61%;
     color: white;
 }
 #cuisine-container{
-    margin:800px;
-    width:400px
-    padding :2100x
-     display: initial;
-    justify-content: start;
-     align-items: justify;
+    margin:350px;
+    padding:100px;
+    display:inital;
+    justify-content:start;
+    align-items:normal;
+
+
 }
 .cuisine{
     height: 300px;
@@ -110,20 +111,22 @@ width: 61%;
    font-size: 1rem;
 }
 .cuisine-image{
-    height:210%;
+    height:250px;
+    width:200%;
     display:fixed;
 }
 
 .cuisine-image img{
-    height: 100%;
-    width: 100%
+    height: 200%;
+    width: 200%
+    object-fit: cover;
 }
 .cuisine-text{
     
     visibility:visible;
     opacity: 1;
     transition:all 200ms ease-in-out;
-    font-size: 14px;
+    font-size: 10px;
 
 }
 .cuisine-text ul{
