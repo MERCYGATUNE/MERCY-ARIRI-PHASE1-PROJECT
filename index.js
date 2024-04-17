@@ -835,7 +835,7 @@ function performSearch(query) {
 
 
     const filteredResults = searchResults.filter(result => 
-        result.name.toLowerCase().includes(query.toLowerCase()) || 
+        result.Title.toLowerCase().includes(query.toLowerCase()) || 
         result.description.toLowerCase().includes(query.toLowerCase())
     );
 
@@ -892,3 +892,4 @@ function saveData(data) {
         alert('An error occurred while saving data.');
     }
 }
+
