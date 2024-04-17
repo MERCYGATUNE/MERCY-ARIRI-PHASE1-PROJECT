@@ -10,7 +10,7 @@
 ## Description
 A program that provides users with  information on different recipes for different cuisines based on culture and provides information on where to easily access the ingredients.
 ## Live Site
-('https://github.com/MERCYGATUNE/MERCY-ARIRI-PHASE1-PROJECT.git')
+https://mercygatune.github.io/MERCY-ARIRI-PHASE1-PROJECT/
 # Technology Used
 1.HTML
 1.CSS
