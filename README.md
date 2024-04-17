@@ -13,8 +13,8 @@ A program that provides users with  information on different recipes for differe
 https://mercygatune.github.io/MERCY-ARIRI-PHASE1-PROJECT/
 # Technology Used
 1.HTML
-1.CSS
-1.Javascript
+2.CSS
+3.Javascript
 
 ## Contact Information
 You can reach me on ariri691@gmail.com
