@@ -1,0 +1,32 @@
+html{
+    background-color: antiquewhite;
+}
+
+
+#search-container {
+    margin-bottom: 20px;
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px;
+    font-size: 16px;
+}
+#search-results-container {
+  margin-top: 20px;
+}
+
+.search-result {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

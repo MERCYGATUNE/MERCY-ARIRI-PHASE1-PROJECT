@@ -12,11 +12,20 @@
         <img src="assets/image/search icon.png" alt="Search"/>
     </header>
    <section class ="container">
+
   <div class="search">
-    <input id="txtSearch" type="text" placeholder="SEARCH CUISINE">
-    <button onclick="searchANdDisplayCuisine()" class="btn">SEARCH</button>
+    <input id="search-input" type="text" placeholder="SEARCH CUISINE">
+    <button onclick="searchANdDisplayCuisine()" id="search-button" class="btn">SEARCH</button>
   </div>
   <div id="search-results-container"></div>
+
+  <!-- SAVE BUTTON -->
+  <h2>Save Favourites</h2>
+
+<textarea id="data-input" placeholder="Enter some data to save"></textarea>
+
+<button id="save-button">Save</button>
+
 
   <div id="cuisine-container">
      <div class="cuisine">
